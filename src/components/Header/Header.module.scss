@@ -1,0 +1,39 @@
+.nav{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.logo{
+  font-family: "Candal", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+}
+
+.menu{
+  // align-items: center;
+  display: flex;
+  gap: 24px;
+  a{
+    color: #000000;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+  }
+}
+
+.search{
+  max-width: 570px;
+  width: 100%;
+  padding: 13px;
+  border-radius: 62px;
+  background-color: #F0F0F0;
+  border: none;
+}
+.header{
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
