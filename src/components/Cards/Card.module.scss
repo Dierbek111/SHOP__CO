@@ -2,19 +2,20 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  img{
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+  
+    &:nth-child(1){
+      aspect-ratio: 1;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
   
 }
-img{
-  width: 100%;
-  border-radius: 20px;
-  display: block;
 
-  &:nth-child(1){
-    aspect-ratio: 1;
-    object-fit: cover;
-    object-position: center;
-  }
-}
 div{
   display: grid;  
 }
