@@ -1,28 +1,19 @@
-.card{
-    // max-width: 600px;
-
+.stars {
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 8px;
-    img{
-        // max-width: 100%;
-        border-radius: 20px;
-        display: block;
+    gap: 5px;
+    cursor: pointer;
 
-        :nth-child(1){
-            aspect-ratio: 1;
-            object-fit: cover;
-            object-position: center;
-        }
-    }
-
-    h3{
+    span {
         font-size: 20px;
-        margin-top: 8px;
+        color: gray; // Цвет неактивных звёзд
+        transition: color 0.3s ease;
     }
 
-    b{
-        font-size: 24px;
+    .activeStar {
+        color: gold; // Цвет активных звёзд
+    }
+
+    .inactiveStar {
+        color: gray; // Цвет неактивных звёзд
     }
 }
