@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import s from './Header.module.scss';
 import { Link } from 'react-router-dom';
-import { useAppContext } from '../../context';
+import { useAppContext } from '../../Context';
 
 const Header = () => {
 
-const{isActive, toggleMenu, closeMenu} = useAppContext()
+  const {isActive, toggleMenu, closeMenu} = useAppContext()
 
   return (
     <>
@@ -13,7 +13,7 @@ const{isActive, toggleMenu, closeMenu} = useAppContext()
         <div className="container">
           <nav className={s.nav}>
             <img className={s.burger} onClick={toggleMenu} src="/burger-img.svg" alt="" />
-            <Link to={'/'} className={s.logo}>
+            <Link onClick={closeMenu} to={'/'} className={s.logo}>
               SHOP.CO
             </Link>
             <div className={`${s.menu} ${isActive ? s.active : null}`}>
@@ -31,15 +31,13 @@ const{isActive, toggleMenu, closeMenu} = useAppContext()
                     fill="black"
                   />
                 </svg>
-
                 <div>
                   <Link to={'/'}>Casual</Link>
-                  <Link to={'/'}>Formal</Link>
                   <Link to={'/'}>Party</Link>
+                  <Link to={'/'}>Formal</Link>
                   <Link to={'/'}>GYM</Link>
                 </div>
-              </Link>
-
+                </Link>
               <Link onClick={closeMenu} to={'/'}>On Sale</Link>
               <Link onClick={closeMenu} to={'/'}>New Arrivals</Link>
               <Link onClick={closeMenu} to={'/'}>Brands</Link>

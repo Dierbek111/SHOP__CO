@@ -9,12 +9,14 @@ import Stay from '../components/stay/Stay';
 const Home = () => {
   return (
     <>
+     
       <Hero />
       <Brand/>
       <Category/>
       <Browse/>
       <Happy/>
       <Stay/>
+      
     </>
   );
 };
